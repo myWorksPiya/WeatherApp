@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather ForeCast</title>
+</head>
+<body>
+<section class="top-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="heading">Weather Forecast</h1>
+                <form>
+                    <input type="text" name="city" placeholder="Search for a city" autofocus>
+                    <button type="submit">SUBMIT</button>
+                    <span class="msg"></span>
+                </form>
+            </div>
+            <div class="col-lg-4 currentDetails"></div>
+        </div>
+    </div>
+</section>
+<section class="mainContent">
+    <div class="container">
+        <ul class="forecast">
+            <li class="firstday day"></li>
+            <li class="secondday day"></li>
+            <li class="thirdday day"></li>
+            <li class="fourthday day"></li>
+            <li class="fifthday day"></li>
+        </ul>
+    </div>
+</section>
+<footer class="page-footer">
+    <div class="container">
+    <small>Made with <span>❤</span> by <a href="" target="_blank">Ardra</a></small>
+  </div>
+</footer>
+
+<script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
