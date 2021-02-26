@@ -65,10 +65,13 @@ const updateUIcurrent = (data) => {
             <figure>
                 <img class="weather-icon" src="${icon}" >
                 <figcaption class="desc">${weatherDets.weather[0].description}</figcaption>
-            </figure>
-           
+            </figure>`;
+	//update the night/day &icon images
+    const iconSrc = `img/icons/${weatherDets.WeatherIcon}.svg`;
+    icon.setAttribute('src', iconSrc);
+    // update the night/day &icon images
+    let timeSrc = weather.IsDayTime ? 'img/day.svg' : 'img/night.svg'; // replacing with ternery operator
 
-    `;
 };
 let i = 4;
 const updateUIForecast = (data) => {
